@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="120dp"
+        >
+
+        <SurfaceView
+            android:id="@+id/record_surfaceView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+
+    <Chronometer
+        android:id="@+id/record_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/DIMEN_30DP"
+        android:format="%s"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/DIMEN_22SP" />
+
+
+    <RelativeLayout
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        >
+
+
+            <ImageView
+                android:id="@+id/ivCamera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/camera_video_status"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                />
+
+            <ImageView
+                android:id="@+id/record_control"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/camera_video_start"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="240dp"
+                />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivPhotoAlbum"
+                android:layout_width="100.0dp"
+                android:layout_height="100.0dp"
+                android:layout_gravity="center_vertical"
+                android:scaleType="centerCrop"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="110dp"
+            />
+        <!--&lt;!&ndash; 开始/结束 录制按钮 &ndash;&gt;-->
+        <!--<ImageView-->
+        <!--android:id="@+id/record_control"-->
+        <!--android:layout_width="60dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:src="@mipmap/recordvideo_start" />-->
+    </RelativeLayout>
+    <!--<ImageView-->
+    <!--android:id="@+id/ivCamera"-->
+    <!--android:layout_width="106dp"-->
+    <!--android:layout_height="106dp"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginRight="50dp"-->
+    <!--android:src="@mipmap/camera_icon"-->
+    <!---->
+    <!--/>-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/ivBack"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_marginRight="25.0dp"-->
+        <!--android:layout_marginTop="25.0dp"-->
+        <!--android:background="?selectableItemBackground"-->
+        <!--android:clickable="true"-->
+        <!--android:src="@drawable/icon_button_closepage" />-->
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/DIMEN_16DP"
+        android:layout_marginTop="@dimen/DIMEN_7DP"
+        android:src="@drawable/alilo_alilo_top_bar_left_img" />
+
+    <ImageView
+        android:id="@+id/ivAlbum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/DIMEN_16DP"
+        android:layout_marginBottom="17dp"
+        android:src="@drawable/camera_photo_album" />
+</RelativeLayout>

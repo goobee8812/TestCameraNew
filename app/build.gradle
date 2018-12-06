@@ -16,6 +16,15 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    sourceSets.main {
+        jni.srcDirs = []
+        res.srcDirs = [
+                "src/main/res",
+                "src/main/res/drawable-mdpi",
+                "src/main/res/drawable-mdpi/meizhi",
+        ]
+    }
 }
 
 dependencies {
@@ -28,4 +37,6 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    compile 'com.tencent.bugly:crashreport:latest.release'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
 }

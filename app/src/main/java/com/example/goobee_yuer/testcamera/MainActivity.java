@@ -12,8 +12,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Intent intent = new Intent(MainActivity.this,MonitorService.class);
-        startService(intent);
+//        Intent intent = new Intent(MainActivity.this,MonitorService.class);
+//        startService(intent);
         findViewById(R.id.show_record_btn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
